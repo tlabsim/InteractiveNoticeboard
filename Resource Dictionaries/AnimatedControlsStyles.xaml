@@ -1,0 +1,12 @@
+﻿<ResourceDictionary x:Class="InteractiveNoticeboard.AnimatedControlsStylesHandlers"
+                    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:IN="clr-namespace:InteractiveNoticeboard">
+ 
+  
+    
+    <Style x:Key="ForeverBlinkerStyle" TargetType="{x:Type Border}">
+        <EventSetter Event="Loaded" Handler="ForeverBlinkerLoaded"/>
+    </Style>
+    
+</ResourceDictionary>

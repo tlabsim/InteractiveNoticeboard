@@ -1,0 +1,12 @@
+﻿
+   
+   
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!--<BitmapImage x:Key="PaperTexture" BaseUri="/InteractiveNoticeboard;component/Resources/Noticeboard/paper"></BitmapImage>
+    <BitmapImage x:Key="PushPin_Purple" BaseUri="/InteractiveNoticeboard;component/Resources/Noticeboard/pushpin-purple.png"></BitmapImage>
+    <BitmapImage x:Key="PushPin_Red" BaseUri="/InteractiveNoticeboard;component/Resources/Noticeboard/pushpin-red.png"></BitmapImage>
+    <BitmapImage x:Key="PushPin_Teal" BaseUri="/InteractiveNoticeboard;component/Resources/Noticeboard/pushpin-teal.png"></BitmapImage>-->
+  
+</ResourceDictionary>

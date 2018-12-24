@@ -1,0 +1,15 @@
+﻿<Application x:Class="InteractiveNoticeboard.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:TLABS_WPF_Converters="clr-namespace:TLABS.WPF.Converters;assembly=TLABS.WPF"
+             StartupUri="MainWindow.xaml">
+    
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <!--<ResourceDictionary x:Name="RDImages" Source="Resource Dictionaries/Images.xaml"></ResourceDictionary>-->
+            </ResourceDictionary.MergedDictionaries>
+                <TLABS_WPF_Converters:ViewBoxConverter x:Key="VBC"></TLABS_WPF_Converters:ViewBoxConverter>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

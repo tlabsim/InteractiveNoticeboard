@@ -1,0 +1,11 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <ResourceDictionary.MergedDictionaries>        
+        <ResourceDictionary Source="/NRC;component/Resource Dictionaries/Theme/Brushes.xaml" />
+        <ResourceDictionary Source="/NRC;component/Resource Dictionaries/Theme/CoreStyles.xaml" />
+        <ResourceDictionary Source="/NRC;component/Resource Dictionaries/Theme/Fonts.xaml" />
+        <ResourceDictionary Source="/NRC;component/Resource Dictionaries/Theme/SDKStyles.xaml" />
+        <ResourceDictionary Source="/NRC;component/Resource Dictionaries/Theme/Styles.xaml" />
+        <ResourceDictionary Source="/NRC;component/Resource Dictionaries/Theme/CustomStyles.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+</ResourceDictionary>

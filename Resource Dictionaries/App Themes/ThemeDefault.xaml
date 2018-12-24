@@ -1,0 +1,9 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:System="clr-namespace:System;assembly=mscorlib">
+
+    <!--<Brush x:Key="WindowBackground">#FF666666</Brush>-->
+    <!--<ImageBrush x:Key="WindowBackground" ImageSource="/NRC;component/Images/Themes/Common/Backgrounds/window_background.jpg" Stretch="UniformToFill" TileMode="None" />-->
+    <!--<Brush x:Key="MainGridBackground">#00F0F0F0</Brush>-->
+   
+</ResourceDictionary>

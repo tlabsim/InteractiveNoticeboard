@@ -1,0 +1,58 @@
+E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\bin\Debug\Media\Sounds\typewriter-key.mp3
+E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\bin\Debug\Data\interactive_noticeboard.accdb
+E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\bin\Debug\InteractiveNoticeboard.exe.config
+E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\bin\Debug\InteractiveNoticeboard.exe
+E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\bin\Debug\InteractiveNoticeboard.pdb
+E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\bin\Debug\TLABS.BinPacking.dll
+E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\bin\Debug\TLABS.Extensions.dll
+E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\bin\Debug\TLABS.IntelligentInput.dll
+E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\bin\Debug\TLABS.WPF.dll
+E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\bin\Debug\TLABS.BinPacking.pdb
+E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\bin\Debug\TLABS.Extensions.pdb
+E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\bin\Debug\TLABS.IntelligentInput.pdb
+E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\bin\Debug\TLABS.WPF.pdb
+E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\obj\Debug\InteractiveNoticeboard.csprojResolveAssemblyReference.cache
+E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\obj\Debug\UserControl\NoticeboardControl.baml
+E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\obj\Debug\UserControl\CSTEAnimationControl.baml
+E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\obj\Debug\UserControl\TeacherProfileControl.baml
+E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\obj\Debug\Resource Dictionaries\App Themes\ThemeDefault.baml
+E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\obj\Debug\Resource Dictionaries\ExpanderStyles.baml
+E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\obj\Debug\Resource Dictionaries\ExpressionLight.baml
+E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\obj\Debug\Resource Dictionaries\Images.baml
+E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\obj\Debug\Resource Dictionaries\ListBoxStyle.baml
+E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\obj\Debug\Resource Dictionaries\ScrollBar.baml
+E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\obj\Debug\Resource Dictionaries\Templates\ButtonTemplates.baml
+E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\obj\Debug\Resource Dictionaries\Theme\Brushes.baml
+E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\obj\Debug\Resource Dictionaries\Theme\CoreStyles.baml
+E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\obj\Debug\Resource Dictionaries\Theme\CustomStyles.baml
+E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\obj\Debug\Resource Dictionaries\Theme\Fonts.baml
+E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\obj\Debug\Resource Dictionaries\Theme\NRCTheme.baml
+E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\obj\Debug\Resource Dictionaries\Theme\SDKStyles.baml
+E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\obj\Debug\Resource Dictionaries\Theme\Styles.baml
+E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\obj\Debug\Resource Dictionaries\ToggleButton.baml
+E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\obj\Debug\App.baml
+E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\obj\Debug\UserControl\NoticeboardControl.g.cs
+E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\obj\Debug\UserControl\CSTEAnimationControl.g.cs
+E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\obj\Debug\UserControl\TeacherProfileControl.g.cs
+E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\obj\Debug\UserControl\IntroAnimationControl.g.cs
+E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\obj\Debug\MainWindow.g.cs
+E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\obj\Debug\Resource Dictionaries\AnimatedControlsStyles.g.cs
+E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\obj\Debug\App.g.cs
+E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\obj\Debug\InteractiveNoticeboard_Content.g.cs
+E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\obj\Debug\GeneratedInternalTypeHelper.g.cs
+E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\obj\Debug\InteractiveNoticeboard_MarkupCompile.cache
+E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\obj\Debug\InteractiveNoticeboard_MarkupCompile.lref
+E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\obj\Debug\UserControl\IntroAnimationControl.baml
+E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\obj\Debug\MainWindow.baml
+E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\obj\Debug\Resource Dictionaries\AnimatedControlsStyles.baml
+E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\obj\Debug\Resource Dictionaries\DataGridResources.baml
+E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\obj\Debug\InteractiveNoticeboard.g.resources
+E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\obj\Debug\InteractiveNoticeboard.Properties.Resources.resources
+E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\obj\Debug\InteractiveNoticeboard.csproj.GenerateResource.Cache
+E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\obj\Debug\InteractiveNoticeboard.exe
+E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\obj\Debug\InteractiveNoticeboard.pdb
+E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\bin\Debug\EntityFramework.dll
+E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\bin\Debug\EntityFramework.SqlServer.dll
+E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\bin\Debug\JetEntityFrameworkProvider.dll
+E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\bin\Debug\EntityFramework.xml
+E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\bin\Debug\EntityFramework.SqlServer.xml
