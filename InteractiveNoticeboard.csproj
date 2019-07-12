@@ -79,7 +79,7 @@
     </ApplicationDefinition>
     <Compile Include="Data Structures\API\NewsAPI\classes.cs" />
     <Compile Include="Data Structures\API\OpenWeatherMap\classes.cs" />
-    <Compile Include="WeatherReport.xaml.cs">
+    <Compile Include="UserControl\WeatherReport.xaml.cs">
       <DependentUpon>WeatherReport.xaml</DependentUpon>
     </Compile>
     <Page Include="UserControl\SpecialEventBannerSlideShow.xaml">
@@ -258,7 +258,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="WeatherReport.xaml">
+    <Page Include="UserControl\WeatherReport.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
