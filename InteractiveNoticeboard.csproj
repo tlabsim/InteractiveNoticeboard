@@ -34,6 +34,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="EntityFramework">
       <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
@@ -44,7 +47,15 @@
     <Reference Include="JetEntityFrameworkProvider">
       <HintPath>..\packages\JetEntityFrameworkProvider.6.1.4\lib\JetEntityFrameworkProvider.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="PresentationFramework.Aero" />
+    <Reference Include="SubtitlesParser, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SubtitlesParser.1.4.2\lib\net40-Client\SubtitlesParser.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Data" />
@@ -66,6 +77,43 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Data Structures\API\NewsAPI\classes.cs" />
+    <Compile Include="Data Structures\API\OpenWeatherMap\classes.cs" />
+    <Compile Include="WeatherReport.xaml.cs">
+      <DependentUpon>WeatherReport.xaml</DependentUpon>
+    </Compile>
+    <Page Include="UserControl\SpecialEventBannerSlideShow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControl\ClassScheduleViewerContainer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControl\EventNotificationItemControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControl\FeaturedVideoViewer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControl\NotificationOverlay.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControl\StudentBirthdayGreeter.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControl\ClassScheduleViewer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControl\NewsBoard.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="UserControl\NoticeboardControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -93,18 +141,37 @@
     <Compile Include="Application Classes\RegistryHelper.cs" />
     <Compile Include="Application Classes\Session.cs" />
     <Compile Include="Application Classes\Settings.cs" />
+    <Compile Include="DB Manager\SettingsManager.cs" />
+    <Compile Include="UserControl\SpecialEventBannerSlideShow.xaml.cs">
+      <DependentUpon>SpecialEventBannerSlideShow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\ClassScheduleViewerContainer.xaml.cs">
+      <DependentUpon>ClassScheduleViewerContainer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Data Structures\Academic.cs" />
+    <Compile Include="Data Structures\FeaturedVideo.cs" />
+    <Compile Include="UserControl\EventNotificationItemControl.xaml.cs">
+      <DependentUpon>EventNotificationItemControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\FeaturedVideoViewer.xaml.cs">
+      <DependentUpon>FeaturedVideoViewer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\NotificationOverlay.xaml.cs">
+      <DependentUpon>NotificationOverlay.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\StudentBirthdayGreeter.xaml.cs">
+      <DependentUpon>StudentBirthdayGreeter.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\ClassScheduleViewer.xaml.cs">
+      <DependentUpon>ClassScheduleViewer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Data Structures\ClassSchedule.cs" />
+    <Compile Include="Data Structures\Common.cs" />
     <Compile Include="Data Structures\Student.cs" />
     <Compile Include="Data Structures\Teacher.cs" />
     <Compile Include="DB Manager\DBClient.cs" />
-    <Compile Include="Model1.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Model1.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Model1.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Model1.tt</DependentUpon>
+    <Compile Include="UserControl\NewsBoard.xaml.cs">
+      <DependentUpon>NewsBoard.xaml</DependentUpon>
     </Compile>
     <Compile Include="UserControl\NoticeboardControl.xaml.cs">
       <DependentUpon>NoticeboardControl.xaml</DependentUpon>
@@ -191,6 +258,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="WeatherReport.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Misc\Converters.cs" />
@@ -214,13 +285,8 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <None Include="Model1.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>Model1.Context.cs</LastGenOutput>
-    </None>
-    <None Include="Model1.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>Model1.cs</LastGenOutput>
+    <None Include="app.manifest">
+      <SubType>Designer</SubType>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -234,7 +300,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Data\Notices\" />
-    <Folder Include="Notices\" />
     <Folder Include="Panels\" />
   </ItemGroup>
   <ItemGroup>
@@ -256,9 +321,37 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Data\interactive_noticeboard.accdb">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    <Content Include="Data\FeaturedVideos\instruction.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Data\interactive_noticeboard.accdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\TeacherPhotos\female_silhouette.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\TeacherPhotos\male_silhouette.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Resources\WeatherIcons\01d.png" />
+    <Resource Include="Resources\WeatherIcons\01n.png" />
+    <Resource Include="Resources\WeatherIcons\02d.png" />
+    <Resource Include="Resources\WeatherIcons\02n.png" />
+    <Resource Include="Resources\WeatherIcons\03d.png" />
+    <Resource Include="Resources\WeatherIcons\03n.png" />
+    <Resource Include="Resources\WeatherIcons\04d.png" />
+    <Resource Include="Resources\WeatherIcons\04n.png" />
+    <Resource Include="Resources\WeatherIcons\09d.png" />
+    <Resource Include="Resources\WeatherIcons\09n.png" />
+    <Resource Include="Resources\WeatherIcons\10d.png" />
+    <Resource Include="Resources\WeatherIcons\10n.png" />
+    <Resource Include="Resources\WeatherIcons\11d.png" />
+    <Resource Include="Resources\WeatherIcons\11n.png" />
+    <Resource Include="Resources\WeatherIcons\13d.png" />
+    <Resource Include="Resources\WeatherIcons\13n.png" />
+    <Resource Include="Resources\WeatherIcons\50d.png" />
+    <Resource Include="Resources\WeatherIcons\50n.png" />
+    <Resource Include="Data\TeacherPhotos\imt.jpg" />
     <Content Include="Media\Sounds\typewriter-key.mp3">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -291,6 +384,60 @@
     <Resource Include="Resources\Noticeboard\pushpin-blue.png" />
     <Resource Include="Resources\Noticeboard\pushpin-green.png" />
     <Resource Include="Resources\Noticeboard\paper.jpg" />
+    <Resource Include="Resources\female_silhouette.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\male_silhouette.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\tech-news.jpg" />
+    <Resource Include="Resources\sign-warning-icon.png" />
+    <Resource Include="Resources\diagonal_stripe.png" />
+    <Resource Include="Resources\group_icon_white.png" />
+    <Resource Include="Resources\calendar_icon_white.png" />
+    <Resource Include="Resources\duration_icon_white.png" />
+    <Content Include="Resources\BirthdayPhotos\Birthday %281%29.jpeg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\BirthdayPhotos\Birthday %281%29.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\BirthdayPhotos\Birthday %2810%29.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\BirthdayPhotos\Birthday %2811%29.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\BirthdayPhotos\Birthday %2812%29.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\BirthdayPhotos\Birthday %2813%29.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\BirthdayPhotos\Birthday %282%29.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\BirthdayPhotos\Birthday %283%29.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\BirthdayPhotos\Birthday %284%29.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\BirthdayPhotos\Birthday %285%29.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\BirthdayPhotos\Birthday %286%29.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\BirthdayPhotos\Birthday %287%29.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\BirthdayPhotos\Birthday %288%29.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\BirthdayPhotos\Birthday %289%29.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Resources\w2.jpg" />
     <Resource Include="Resources\wallpaper-nature-yellow-spring-flower-blur.jpg" />
     <Resource Include="Resources\wallpaper-81299.jpg" />
@@ -299,6 +446,9 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -18,7 +18,7 @@
         </Border>
         
         <Border Name="Layer2">
-            <IN:CSTEAnimationControl x:Name="CAC"></IN:CSTEAnimationControl>
+            <IN:CSTEAnimationControl x:Name="CAC" Opacity="0"></IN:CSTEAnimationControl>
         </Border>
     </Grid>
 </UserControl>

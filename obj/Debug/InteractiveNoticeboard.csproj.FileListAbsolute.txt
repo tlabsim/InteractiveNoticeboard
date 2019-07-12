@@ -1,8 +1,16 @@
-E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\bin\Debug\Media\Sounds\typewriter-key.mp3
+E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\bin\Debug\Data\FeaturedVideos\instruction.txt
 E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\bin\Debug\Data\interactive_noticeboard.accdb
+E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\bin\Debug\Data\TeacherPhotos\female_silhouette.png
+E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\bin\Debug\Data\TeacherPhotos\male_silhouette.jpg
+E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\bin\Debug\Media\Sounds\typewriter-key.mp3
 E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\bin\Debug\InteractiveNoticeboard.exe.config
 E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\bin\Debug\InteractiveNoticeboard.exe
 E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\bin\Debug\InteractiveNoticeboard.pdb
+E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\bin\Debug\EntityFramework.dll
+E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\bin\Debug\EntityFramework.SqlServer.dll
+E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\bin\Debug\JetEntityFrameworkProvider.dll
+E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\bin\Debug\Newtonsoft.Json.dll
+E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\bin\Debug\SubtitlesParser.dll
 E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\bin\Debug\TLABS.BinPacking.dll
 E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\bin\Debug\TLABS.Extensions.dll
 E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\bin\Debug\TLABS.IntelligentInput.dll
@@ -11,7 +19,13 @@ E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\bin\Debug
 E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\bin\Debug\TLABS.Extensions.pdb
 E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\bin\Debug\TLABS.IntelligentInput.pdb
 E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\bin\Debug\TLABS.WPF.pdb
+E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\bin\Debug\EntityFramework.xml
+E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\bin\Debug\EntityFramework.SqlServer.xml
+E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\bin\Debug\Newtonsoft.Json.pdb
+E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\bin\Debug\Newtonsoft.Json.xml
 E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\obj\Debug\InteractiveNoticeboard.csprojResolveAssemblyReference.cache
+E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\obj\Debug\UserControl\ClassScheduleViewer.baml
+E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\obj\Debug\UserControl\NewsBoard.baml
 E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\obj\Debug\UserControl\NoticeboardControl.baml
 E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\obj\Debug\UserControl\CSTEAnimationControl.baml
 E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\obj\Debug\UserControl\TeacherProfileControl.baml
@@ -31,6 +45,8 @@ E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\obj\Debug
 E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\obj\Debug\Resource Dictionaries\Theme\Styles.baml
 E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\obj\Debug\Resource Dictionaries\ToggleButton.baml
 E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\obj\Debug\App.baml
+E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\obj\Debug\UserControl\ClassScheduleViewer.g.cs
+E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\obj\Debug\UserControl\NewsBoard.g.cs
 E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\obj\Debug\UserControl\NoticeboardControl.g.cs
 E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\obj\Debug\UserControl\CSTEAnimationControl.g.cs
 E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\obj\Debug\UserControl\TeacherProfileControl.g.cs
@@ -51,8 +67,31 @@ E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\obj\Debug
 E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\obj\Debug\InteractiveNoticeboard.csproj.GenerateResource.Cache
 E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\obj\Debug\InteractiveNoticeboard.exe
 E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\obj\Debug\InteractiveNoticeboard.pdb
-E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\bin\Debug\EntityFramework.dll
-E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\bin\Debug\EntityFramework.SqlServer.dll
-E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\bin\Debug\JetEntityFrameworkProvider.dll
-E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\bin\Debug\EntityFramework.xml
-E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\bin\Debug\EntityFramework.SqlServer.xml
+E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\obj\Debug\UserControl\EventNotificationItemControl.baml
+E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\obj\Debug\UserControl\FeaturedVideoViewer.baml
+E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\obj\Debug\UserControl\NotificationOverlay.baml
+E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\obj\Debug\UserControl\StudentBirthdayGreeter.baml
+E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\obj\Debug\UserControl\ClassScheduleViewerContainer.g.cs
+E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\obj\Debug\UserControl\EventNotificationItemControl.g.cs
+E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\obj\Debug\UserControl\FeaturedVideoViewer.g.cs
+E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\obj\Debug\UserControl\NotificationOverlay.g.cs
+E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\obj\Debug\UserControl\StudentBirthdayGreeter.g.cs
+E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\obj\Debug\UserControl\ClassScheduleViewerContainer.baml
+E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\bin\Debug\Resources\BirthdayPhotos\Birthday (1).jpeg
+E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\bin\Debug\Resources\BirthdayPhotos\Birthday (1).jpg
+E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\bin\Debug\Resources\BirthdayPhotos\Birthday (10).jpg
+E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\bin\Debug\Resources\BirthdayPhotos\Birthday (11).jpg
+E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\bin\Debug\Resources\BirthdayPhotos\Birthday (12).jpg
+E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\bin\Debug\Resources\BirthdayPhotos\Birthday (13).jpg
+E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\bin\Debug\Resources\BirthdayPhotos\Birthday (2).jpg
+E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\bin\Debug\Resources\BirthdayPhotos\Birthday (3).jpg
+E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\bin\Debug\Resources\BirthdayPhotos\Birthday (4).jpg
+E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\bin\Debug\Resources\BirthdayPhotos\Birthday (5).jpg
+E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\bin\Debug\Resources\BirthdayPhotos\Birthday (6).jpg
+E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\bin\Debug\Resources\BirthdayPhotos\Birthday (7).jpg
+E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\bin\Debug\Resources\BirthdayPhotos\Birthday (8).jpg
+E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\bin\Debug\Resources\BirthdayPhotos\Birthday (9).jpg
+E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\obj\Debug\UserControl\SpecialEventBannerSlideShow.baml
+E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\obj\Debug\UserControl\SpecialEventBannerSlideShow.g.cs
+E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\obj\Debug\WeatherReport.baml
+E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\obj\Debug\WeatherReport.g.cs

@@ -3,13 +3,58 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:TLABS_WPF_Converters="clr-namespace:TLABS.WPF.Converters;assembly=TLABS.WPF"
              StartupUri="MainWindow.xaml">
-    
+
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
                 <!--<ResourceDictionary x:Name="RDImages" Source="Resource Dictionaries/Images.xaml"></ResourceDictionary>-->
             </ResourceDictionary.MergedDictionaries>
-                <TLABS_WPF_Converters:ViewBoxConverter x:Key="VBC"></TLABS_WPF_Converters:ViewBoxConverter>
+            <TLABS_WPF_Converters:ViewBoxConverter x:Key="VBC"></TLABS_WPF_Converters:ViewBoxConverter>
+
+            <TLABS_WPF_Converters:PositiveIntToBoolConverter x:Key="PI2B"/>
+            <TLABS_WPF_Converters:ZeroToBoolConverter x:Key="Z2B"/>
+            <TLABS_WPF_Converters:NonZeroToBoolConverter x:Key="NZ2B"/>
+            <TLABS_WPF_Converters:SelectionToBoolConverter x:Key="S2B"/>
+            <TLABS_WPF_Converters:TextToBoolConverter x:Key="T2B"/>
+            <TLABS_WPF_Converters:NoTextToBoolConverter x:Key="NT2B"/>
+            <TLABS_WPF_Converters:VisibilityToBoolConverter x:Key="V2B"/>
+            <TLABS_WPF_Converters:BoolInverter x:Key="BI"/>
+
+            <TLABS_WPF_Converters:BoolToVisibilityConverter x:Key="B2V"/>
+            <TLABS_WPF_Converters:BoolToInvisibilityConverter x:Key="B2I"/>
+            <TLABS_WPF_Converters:NullToVisibilityConverter x:Key="N2V"/>
+            <TLABS_WPF_Converters:NullToInvisibilityConverter x:Key="N2I"/>
+            <TLABS_WPF_Converters:IntToIndexConverter x:Key="I2I"/>
+            <TLABS_WPF_Converters:NoSelectionToNoVisibilityConverter x:Key="NS2NV"/>
+            <TLABS_WPF_Converters:MultiSelectionToVisibilityConverter x:Key="MS2V"/>
+            <TLABS_WPF_Converters:MultiBoolToVisibilityConverter x:Key="MB2V"/>
+            <TLABS_WPF_Converters:MultiBoolToInvisibilityConverter x:Key="MB2I"/>
+            <TLABS_WPF_Converters:NoBoolToVisibilityConverter x:Key="NB2V"/>
+            <TLABS_WPF_Converters:AnyBoolToVisibilityConverter x:Key="AB2V"/>
+            <TLABS_WPF_Converters:AnyBoolToInvisibilityConverter x:Key="AB2I"/>
+            <TLABS_WPF_Converters:TextToVisibilityConverter x:Key="T2V"/>
+
+            <TLABS_WPF_Converters:FocusAndTextToVisibilityConverter x:Key="FAT2VC"/>
+            <TLABS_WPF_Converters:VisibilityFocusTextToVisibilityConverter x:Key="VFT2VC"/>
+            <TLABS_WPF_Converters:FocusAndSelectionToVisibilityConverter x:Key="FAS2VC"/>
+            <TLABS_WPF_Converters:VisibilityFocusSelectionToVisibilityConverter x:Key="VFS2VC"/>
+            <TLABS_WPF_Converters:FocusAndTextOrBoolToVisibilityConverter x:Key="FATOB2VC"/>
+
+            <TLABS_WPF_Converters:VisibilityInverter x:Key="VI"/>
+            <TLABS_WPF_Converters:ValueParamEqualityConverter x:Key="VPEC"/>
+            <TLABS_WPF_Converters:EqualityConverter x:Key="EC"/>
+            <TLABS_WPF_Converters:LogicalAndConverter x:Key="LAC"/>
+            <TLABS_WPF_Converters:LogicalOrConverter x:Key="LOC"/>
+
+            <TLABS_WPF_Converters:ObjectToStringConverter x:Key="O2S"/>
+            <TLABS_WPF_Converters:IncrementConverter x:Key="IC"/>
+            <TLABS_WPF_Converters:DecrementConverter x:Key="DC"/>
+            <TLABS_WPF_Converters:AdditionConverter x:Key="AC"/>
+            <TLABS_WPF_Converters:SubtractConverter x:Key="SC"/>
+            <TLABS_WPF_Converters:ColorToBrushConverter x:Key="C2BC"/>
+            <TLABS_WPF_Converters:IntegerToOrdinalityConverter x:Key="I2OC"/>
+            <TLABS_WPF_Converters:DoubleToOrdinalityConverter x:Key="D2OC"/>
+            <TLABS_WPF_Converters:DateTimeFormatter x:Key="DTF"/>
         </ResourceDictionary>
     </Application.Resources>
 </Application>

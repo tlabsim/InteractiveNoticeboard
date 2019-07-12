@@ -8,8 +8,25 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("data/featuredvideos/instruction.txt")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("data/interactive_noticeboard.accdb")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("data/teacherphotos/female_silhouette.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("data/teacherphotos/male_silhouette.jpg")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("media/sounds/typewriter-key.mp3")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/birthdayphotos/birthday%20(1).jpeg")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/birthdayphotos/birthday%20(1).jpg")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/birthdayphotos/birthday%20(10).jpg")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/birthdayphotos/birthday%20(11).jpg")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/birthdayphotos/birthday%20(12).jpg")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/birthdayphotos/birthday%20(13).jpg")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/birthdayphotos/birthday%20(2).jpg")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/birthdayphotos/birthday%20(3).jpg")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/birthdayphotos/birthday%20(4).jpg")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/birthdayphotos/birthday%20(5).jpg")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/birthdayphotos/birthday%20(6).jpg")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/birthdayphotos/birthday%20(7).jpg")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/birthdayphotos/birthday%20(8).jpg")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/birthdayphotos/birthday%20(9).jpg")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/w2.jpg")]
 
 

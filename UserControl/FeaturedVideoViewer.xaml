@@ -1,0 +1,41 @@
+﻿<UserControl x:Class="InteractiveNoticeboard.FeaturedVideoViewer"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="600" d:DesignWidth="800"
+             Loaded="UserControl_Loaded"
+             Unloaded="UserControl_Unloaded">
+    
+    <Grid Name="LayoutRoot">
+        <Grid>
+            <Border Background="Black"></Border>
+            
+            <MediaElement Name="VideoPlayer" LoadedBehavior="Manual"></MediaElement>
+
+            <TextBlock Name="txtVideoTitle" VerticalAlignment="Top" Margin="30,10,50,0" FontFamily="Glacial Indifference, Arial" Foreground="White" FontSize="20" TextAlignment="Left" TextWrapping="Wrap" Opacity="0.75">
+                <TextBlock.Effect>
+                    <DropShadowEffect ShadowDepth="0" BlurRadius="15" Opacity="1"></DropShadowEffect>
+                </TextBlock.Effect>
+            </TextBlock>
+
+            <TextBlock Name="txtSubtitle" VerticalAlignment="Bottom" Margin="50,0,50,30" FontFamily="Glacial Indifference, Arial" Foreground="White" FontSize="40" TextAlignment="Center" TextWrapping="Wrap">
+                <TextBlock.Effect>
+                    <DropShadowEffect ShadowDepth="0" BlurRadius="15" Opacity="1"></DropShadowEffect>
+                </TextBlock.Effect>
+            </TextBlock>
+            
+            <Border Name="ButtonPanel" HorizontalAlignment="Right" Background="Transparent" Width="100">
+                <Border Name="btnSkip" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,20,0" Background="#86000000" BorderBrush="White" BorderThickness="1" Padding="3" CornerRadius="3" Cursor="Hand" Visibility="{Binding IsMouseOver, ElementName=ButtonPanel, Converter={StaticResource B2V}}" MouseLeftButtonDown="btnSkip_MouseLeftButtonDown">
+                    <Canvas Width="24" Height="24">
+                        <Path Data="M0,0 10,10 0,20Z" Fill="#D0FFFFFF" Canvas.Left="4" Canvas.Top="2"></Path>
+                        <Path Data="M0,0 10,10 0,20Z" Fill="#D0FFFFFF" Canvas.Left="11" Canvas.Top="2"></Path>
+                    </Canvas>
+                   
+                </Border>
+            </Border>
+            
+        </Grid>
+    </Grid>
+</UserControl>

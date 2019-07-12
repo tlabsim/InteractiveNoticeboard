@@ -14,6 +14,8 @@ using System.Windows.Media.Effects;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using InteractiveNoticeboard.Data_Structures;
+using TLABS.Extensions;
 
 namespace InteractiveNoticeboard
 {
@@ -56,12 +58,12 @@ namespace InteractiveNoticeboard
 
         List<SolidColorBrush> LogoColorPalette = new List<SolidColorBrush>() 
         {            
-            new SolidColorBrush(Color.FromArgb(20, 20, 180, 20)),
-             new SolidColorBrush(Color.FromArgb(20, 20, 190, 20)),
-             new SolidColorBrush(Color.FromArgb(20, 20, 200, 20)),
-             new SolidColorBrush(Color.FromArgb(20, 30, 180, 30)),
-             new SolidColorBrush(Color.FromArgb(20, 30, 190, 30)),
-             new SolidColorBrush(Color.FromArgb(20, 30, 200, 30))
+            new SolidColorBrush(Color.FromArgb(60, 100, 180, 20)),
+             new SolidColorBrush(Color.FromArgb(60, 100, 190, 20)),
+             new SolidColorBrush(Color.FromArgb(60, 100, 200, 20)),
+             new SolidColorBrush(Color.FromArgb(60, 100, 180, 30)),
+             new SolidColorBrush(Color.FromArgb(60, 100, 190, 30)),
+             new SolidColorBrush(Color.FromArgb(60, 100, 200, 30))
         };
 
         double block_width = 16;
@@ -93,23 +95,25 @@ namespace InteractiveNoticeboard
         {
             "Interactive Noticeboard System",
             "Department of Computer Science and Telecommunication Engineering",
-            "Noakhali Science and Technology University",
-            "Dr. Humayun Kabir | hkabir@gmail.com",
-            "Md. Javed Hossain | javed.nstu@gmail.com",
-            "Dr. Ashadunnabi | ashadunnai@yahoo.com",
-            "Md. Bellal Hossain | bellal.nstu@gmail.com",
-            "Nahida Akter | nahida@nstu.edu.nd",
-            "Abhijit Chakrabrty | abhijit@nstu.edu.bd",
-            "Md. Kamal Hossain | kamal@nstu.edu.bd",
-            "Abul Kalam Azad | azad.cste@gmail.com",
-            "Iftekhar Mahmud Towhid | tlabs.im@gmail.com"
-        };
+            "Noakhali Science and Technology University",            
+        };        
 
         string AlphaNumerics = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
 
         public CSTEAnimationControl()
         {
             InitializeComponent();
+
+            SetControls();
+        }
+
+        void SetControls()
+        {
+            var teachers = Teacher.GetAllTeachers();
+            foreach(var teacher in teachers)
+            {
+                StreamTexts.Add(string.Format("{0} | {1}", teacher.Name, teacher.Email));
+            }
         }
 
         public void SetupCanvas()
@@ -156,18 +160,19 @@ namespace InteractiveNoticeboard
                 transform_vertor[h] = tr;
 
                 Canvas c = new Canvas();
+                c.CacheMode = new BitmapCache();
                 c.Width = block_width;
                 c.Height = vertical_blocks * block_height;
 
                 c.SetValue(Canvas.LeftProperty, h * block_width);
                 c.SetValue(Canvas.TopProperty, 0.0);
 
-
-                c.LayoutTransform = new ScaleTransform() { ScaleX = 1 + tr, ScaleY = 1 + tr, CenterX = 0.5, CenterY = 0.5 };
+                c.RenderTransformOrigin = new Point(0.5, 0.5);
+                c.RenderTransform = new ScaleTransform() { ScaleX = 1 + tr, ScaleY = 1 + tr };
                 c.Effect = new BlurEffect() { Radius = abstr * 5 };
 
                 CSTEAnimationCanvas.Children.Add(c);
-
+                c.CacheMode = new BitmapCache();
                 ContainerCanvases.Add(c);
             }
 

@@ -1,0 +1,60 @@
+﻿<UserControl x:Class="InteractiveNoticeboard.ClassScheduleViewer"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="600" d:DesignWidth="800"
+             RenderOptions.BitmapScalingMode="HighQuality"
+             Loaded="UserControl_Loaded">
+    
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ImageBrush x:Key="ElapsedTimeBorderBackground" ImageSource="/InteractiveNoticeboard;component/Resources/diagonal_stripe.png" Viewport="0,0,100,100" ViewportUnits="Absolute" TileMode="Tile" Stretch="UniformToFill">
+                <ImageBrush.Transform>
+                    <TranslateTransform X="0"/>
+                </ImageBrush.Transform>
+            </ImageBrush>
+        </ResourceDictionary>
+    </UserControl.Resources>
+
+    <Grid Name="LayoutRoot">
+        <Border>
+            <Border.Background>
+                White
+            </Border.Background>
+        </Border>
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="150"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                <TextBlock Name="txtHeader" Foreground="#FFD03060" FontFamily="Lora, Arial" FontSize="50" FontWeight="Bold" FontStyle="Italic" Text="Today's Class Schedules" HorizontalAlignment="Center"></TextBlock>
+                <TextBlock Name="txtScheduleDate" Foreground="#FF363636" FontFamily="Alegreya Sans Thin" FontSize="24" HorizontalAlignment="Center" Text="" Margin="0,0,0,0"></TextBlock>
+            </StackPanel>
+
+            <Canvas Name="cv" Grid.Row="1" Margin="20,20,20,20"></Canvas>
+
+            <TextBlock Name="txtNoSchedules" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,150" TextAlignment="Center" Foreground="#FFD02020" FontFamily="Alegreya Sans Thin" FontSize="36" Visibility="Collapsed">
+                <InlineUIContainer>
+                    <Image Width="150" Source="/InteractiveNoticeboard;component/Resources/sign-warning-icon.png"></Image>
+                </InlineUIContainer>
+                <LineBreak/>
+                <Run Name="runNoSchedules" Text="No classes scheduled today."></Run>
+            </TextBlock>
+
+            <Border Name="TheDayIsOver" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" CornerRadius="25" Padding="25,0" Margin="0,0,0,100" Background="#FFD03060" Visibility="Collapsed">
+                <Border.Effect>
+                    <DropShadowEffect Direction="225" ShadowDepth="5" Opacity=".5" BlurRadius="10"></DropShadowEffect>
+                </Border.Effect>
+                <TextBlock Name="txtTheDayIsOver" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" Foreground="White" FontFamily="Lora" FontSize="25" FontStyle="Italic">
+                    <Run Text="The day is over!!!"></Run>
+                </TextBlock>
+            </Border>
+
+        </Grid>
+    </Grid>
+</UserControl>

@@ -9,11 +9,12 @@ using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
+using System.Windows.Media.Animation;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-
 using TLABS.Extensions;
+using TLABS.WPF.Animations;
 
 namespace InteractiveNoticeboard
 {
@@ -30,6 +31,9 @@ namespace InteractiveNoticeboard
 
         public bool PlaySound = true;
 
+        System.Timers.Timer TimeoutTimer;
+        public event EventHandler Completed;
+
         public IntroAnimationControl()
         {
             InitializeComponent();
@@ -44,6 +48,37 @@ namespace InteractiveNoticeboard
 
         void SetControls()
         {
+            TimeoutTimer = new System.Timers.Timer();
+            TimeoutTimer.Interval = 60000;
+            TimeoutTimer.Elapsed += TimeoutTimer_Elapsed;
+            TimeoutTimer.Start();
+        }
+
+        void TimeoutTimer_Elapsed(object sender, System.Timers.ElapsedEventArgs e)
+        {
+            try
+            {
+                if(TimeoutTimer != null)
+                {
+                    TimeoutTimer.Stop();
+                }
+
+                this.Dispatcher.Invoke(() =>
+                    {
+                        OnComplete();
+                    });
+            }
+            catch { }
+        }
+
+        void OnComplete()
+        {
+            EventHandler eh = this.Completed;
+
+            if(eh != null)
+            {
+                eh(this, new EventArgs());
+            }
         }
 
         void SetUI()
@@ -59,15 +94,15 @@ namespace InteractiveNoticeboard
             Typer.Line[] lines = 
             {
                 new Typer.Line("Welcome to", 30, "#FF464646"),
-                new Typer.Line("Department of", 40, "#FF3050A0"),
-                new Typer.Line("Computer Science and Telcommunication Engineering", 50, "#FF204090"),
+                new Typer.Line("Department of", 35, "#FF3050A0"),
+                new Typer.Line("Computer Science and Telcommunication Engineering", 40, "#FF204090"),
             };
 
             Typer typer = new Typer();
             typer.TextBlock = txtWelcomeMessage;
 
             Session.Window.MediaPlayer.Source = new Uri(Settings.AppPath + "/Media/Sounds/typewriter-key.mp3", UriKind.RelativeOrAbsolute);
-            Session.Window.MediaPlayer.Volume = 0.05;
+            Session.Window.MediaPlayer.Volume = 0.2;
 
             typer.Typing += (o, e) =>
                 {
@@ -78,19 +113,29 @@ namespace InteractiveNoticeboard
                     }
                 };
 
+            typer.TypingEnded += typer_TypingEnded;
             typer.Type(lines);
         }
 
-        void AnimateCSTE()
+        void typer_TypingEnded(object sender, EventArgs e)
         {
+            AnimateCSTE();
+        }
+
+        void AnimateCSTE()
+        {          
             CAC.SetupCanvas();
             CAC.StartTextStream();
+
+            CAC.CacheMode = new BitmapCache();
+            DoubleAnimation fade_in = new DoubleAnimation(1, TimeSpan.FromMilliseconds(1000));
+            CAC.BeginAnimation(UIElement.OpacityProperty, fade_in);
         }
 
         private void UserControl_Loaded(object sender, RoutedEventArgs e)
         {
-            //TypeWelcomeMessage();
-            AnimateCSTE();
+            TypeWelcomeMessage();
+            //AnimateCSTE();
         }
     }
 }

@@ -16,8 +16,8 @@ namespace InteractiveNoticeboard
             Key.SetValue("Application name", "Interactive Noticeboard");
             Key.SetValue("Owner", "Department of CSTE, Noakhali Science and Technology University");
             Key.SetValue("Developed by", "TLABS");
-            Key.SetValue("Email", "im_towhid@yahoo.com");
-            Key.SetValue("Copyright", "copyright@2016");
+            Key.SetValue("Email", "tlabs.im@gmail.com");
+            Key.SetValue("Copyright", "copyright@2019");
         }
 
         public static void SetSettings(string parameter, object value)

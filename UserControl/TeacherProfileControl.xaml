@@ -9,43 +9,30 @@
     <UserControl.Resources>
         <ResourceDictionary>
             <Style TargetType="{x:Type TextBlock}">
-                <Setter Property="FontFamily" Value="Rawengulk"></Setter>
+                <Setter Property="FontFamily" Value="ABeeZee, Roboto, Arial"></Setter>
             </Style>
         </ResourceDictionary>
     </UserControl.Resources>
     
     <Grid Name="LayoutRoot">
-        <Border Name="BackgroundBorder">
-            <Border>
+        <Grid>
+            <Border  Name="TeacherImageBlurred1" Opacity="1">
+                <Border.CacheMode>
+                    <BitmapCache RenderAtScale="1"></BitmapCache>
+                </Border.CacheMode>
                 <Border.Background>
-                    <ImageBrush ImageSource="/InteractiveNoticeboard;component/Temp Resourses/blur-1.jpg" Stretch="UniformToFill"/>
-                </Border.Background>                
-            </Border>   
-        </Border>
-
-        
-        <Border Name="TeacherImageBlurred1" Opacity="0.75">
-            <Border Margin="-100">
-                <Border.Background>
-                    <ImageBrush ImageSource="/InteractiveNoticeboard;component/Temp Resourses/me4.jpg" Stretch="UniformToFill"/>
-                </Border.Background>
-                <Border.Effect>
-                    <BlurEffect Radius="100"></BlurEffect>
-                </Border.Effect>
+                    <ImageBrush ImageSource="/InteractiveNoticeboard;component/Resources/male_silhouette.jpg" Stretch="UniformToFill"/>
+                </Border.Background>              
             </Border>
-        </Border>
-
-        <Border Name="TeacherImageBlurred2" Opacity="0">
-            <Border Margin="-100">
+            <Border Name="TeacherImageBlurred2" Opacity="0">
+                <Border.CacheMode>
+                    <BitmapCache RenderAtScale="1"></BitmapCache>
+                </Border.CacheMode>
                 <Border.Background>
-                    <ImageBrush ImageSource="/InteractiveNoticeboard;component/Temp Resourses/me4.jpg" Stretch="UniformToFill"/>
-                </Border.Background>
-                <Border.Effect>
-                    <BlurEffect Radius="100"></BlurEffect>
-                </Border.Effect>
+                    <ImageBrush ImageSource="/InteractiveNoticeboard;component/Resources/male_silhouette.jpg" Stretch="UniformToFill"/>
+                </Border.Background>               
             </Border>
-        </Border>
-
+        </Grid>
 
         <Grid Name="ProfileGrid">
             <Grid.ColumnDefinitions>
@@ -65,50 +52,103 @@
                     </VisualBrush>
                 </Border.Background>
             </Border>
-            <Border Grid.Column="1" Name="ProfileGridBackground" Background="#F0E6E6E6"></Border>
             
-            <StackPanel Name="stackPhotoAndNavigator" Grid.Column="1" Width="250" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="-125,100,0,0">
-                <Path Data="M1,11 9,3 17,11" Width="19" Height="19" Stroke="White" StrokeThickness="3" StrokeLineJoin="Round" StrokeStartLineCap="Round" StrokeEndLineCap="Round" Margin="5">
-                    <Path.Effect>
-                        <DropShadowEffect ShadowDepth="0" Opacity=".5"></DropShadowEffect>
-                    </Path.Effect>
-                </Path>
-
-                <Border Width="250" Height="250" CornerRadius="125">
+            <Border Grid.Column="1" Name="ProfileGridBackground" Background="#F0E6E6E6"></Border>      
+            
+            <Grid Name="PhotoNavigatorPanel" Width="250" Height="625" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="-125,0,0,0">
+                <Border Name="TeacherPhotoContainer1" Width="250" Height="250" CornerRadius="125" VerticalAlignment="Top" Margin="0,125,0,0" RenderTransformOrigin="0.5, 0.5" Opacity="1" Panel.ZIndex="100">                    
+                    <Border.CacheMode>
+                        <BitmapCache></BitmapCache>
+                    </Border.CacheMode>
+                    <Border.RenderTransform>
+                        <ScaleTransform ScaleX="1" ScaleY="1"></ScaleTransform>
+                    </Border.RenderTransform>
                     <Border.Background>
-                        <ImageBrush ImageSource="/InteractiveNoticeboard;component/Temp Resourses/me4.jpg"/>
+                        <ImageBrush ImageSource="/InteractiveNoticeboard;component/Resources/male_silhouette.jpg"/>
                     </Border.Background>
                     <Border.Effect>
                         <DropShadowEffect ShadowDepth="10" Direction="180" BlurRadius="20" Color="#FF868686"></DropShadowEffect>
                     </Border.Effect>
                 </Border>
 
-                <Path Data="M1,7 9,15 17,7" Width="19" Height="19" Stroke="White" StrokeThickness="3" StrokeLineJoin="Round" StrokeStartLineCap="Round" StrokeEndLineCap="Round" Margin="5">
-                    <Path.Effect>
-                        <DropShadowEffect ShadowDepth="0" Opacity=".5"></DropShadowEffect>
-                    </Path.Effect>
-                </Path>
-            </StackPanel>
+                <Border Name="TeacherPhotoContainer2" Width="250" Height="250" CornerRadius="125" VerticalAlignment="Top" Margin="0,375,0,0" RenderTransformOrigin="0.5, 0.5" Opacity="0" Panel.ZIndex="0">
+                    <Border.CacheMode>
+                        <BitmapCache></BitmapCache>
+                    </Border.CacheMode>
+                    <Border.RenderTransform>
+                        <ScaleTransform ScaleX="0.5" ScaleY="0.5"></ScaleTransform>
+                    </Border.RenderTransform>
+                    <Border.Background>
+                        <ImageBrush ImageSource="/InteractiveNoticeboard;component/Resources/male_silhouette.jpg" Stretch="Uniform"/>
+                    </Border.Background>
+                    <Border.Effect>
+                        <DropShadowEffect ShadowDepth="10" Direction="180" BlurRadius="20" Color="#FF868686"></DropShadowEffect>
+                    </Border.Effect>
+                </Border>
+            </Grid>
             
-            <StackPanel Grid.Column="1" Margin="175,150,50,50">
-                <TextBlock Name="txtTeacherName" Foreground="#FF004892" FontFamily="RawengulkPcs" FontSize="50" Margin="0,0">Iftekhar Mahmud Towhid</TextBlock>
-                <TextBlock Name="txtDesignation" Foreground="#FF0064A0" FontSize="36" Margin="0,0">Assistant Professor</TextBlock>
-                <TextBlock Foreground="#FF363636" FontSize="30" Margin="0,0">
-                    <InlineUIContainer BaselineAlignment="Center">
-                        <Image Width="30" Height="30"></Image>
-                    </InlineUIContainer>
-                    <Run Name="txtEmail">tlabs.im@gmail.com</Run>
+            <StackPanel Name="CurrentTeacherInfoPanel" Grid.Column="1" Margin="175,150,50,50" Opacity="1" RenderTransformOrigin="0.5, 0">
+                <StackPanel.CacheMode>
+                    <BitmapCache></BitmapCache>
+                </StackPanel.CacheMode>
+                <TextBlock Name="txtCurrentTeacherName" FontFamily="Lora" FontStyle="Italic" Foreground="#FFD03060" FontSize="50" Margin="-5,0,0,0"></TextBlock>
+                <TextBlock Name="txtCurrentTeacherDesignation" Foreground="#FF000000" FontSize="36" Margin="0,0"></TextBlock>
+                <TextBlock Foreground="#FF363636" FontSize="26" Margin="0,3">                
+                    <Run Text="&#9993;"></Run>
+                    <Run Name="txtCurrentTeacherEmail"></Run>
+                </TextBlock>
+                <TextBlock Foreground="#FF363636" FontSize="26" Margin="0,3">                
+                    <Run Text="&#128241;"></Run>
+                    <Run Name="txtCurrentTeacherPhone"></Run>
+                </TextBlock>
+                <TextBlock Foreground="#FF363636" FontSize="26" Margin="0,3" TextWrapping="Wrap">                
+                    <Run Text="&#128300;"></Run>
+                    <Run Name="txtCurrentTeacherResearchInterest"></Run>
+                </TextBlock>
+                <TextBlock Name="txtCurrentTeacherAbout" Foreground="#FF464646" FontSize="22" Margin="0,20,20,0" TextWrapping="Wrap">                
+                    <Run Text="About"></Run> <Run Text="{Binding Path=Text, ElementName=txtCurrentTeacherName, Mode=OneWay}"></Run>
+                    <LineBreak/>
+                    <Run FontSize="18" Name="runCurrentTeacherAbout"></Run>
                 </TextBlock>
             </StackPanel>
-            
-        </Grid>
-        
-        <TextBlock Name="linkBack" Foreground="#FFFFFFFF" FontSize="15" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0">
+
+            <StackPanel Name="NextTeacherInfoPanel" Grid.Column="1" Margin="175,150,50,50" Opacity="0" RenderTransformOrigin="0.5,0">
+                <StackPanel.CacheMode>
+                    <BitmapCache></BitmapCache>
+                </StackPanel.CacheMode>
+                <TextBlock Name="txtNextTeacherName" FontFamily="Lora" FontStyle="Italic" Foreground="#FFD03060" FontSize="50" Margin="-5,0,0,0">Iftekhar Mahmud Towhid</TextBlock>
+                <TextBlock Name="txtNextTeacherDesignation" Foreground="#FF000000" FontSize="36" Margin="0,0">Assistant Professor</TextBlock>
+                <TextBlock Foreground="#FF363636" FontSize="26" Margin="0,3">                
+                    <Run Text="&#9993;"></Run>
+                    <Run Name="txtNextTeacherEmail">tlabs.im@gmail.com</Run>
+                </TextBlock>
+                <TextBlock Foreground="#FF363636" FontSize="26" Margin="0,3">                
+                    <Run Text="&#128241;"></Run>
+                    <Run Name="txtNextTeacherPhone">+8801812597258</Run>
+                </TextBlock>
+                <TextBlock Foreground="#FF363636" FontSize="26" Margin="0,3" TextWrapping="Wrap">                
+                    <Run Text="&#128300;"></Run>
+                    <Run Name="txtNextTeacherResearchInterest"></Run>
+                </TextBlock>
+                <TextBlock Name="txtNextTeacherAbout" Foreground="#FF464646" FontSize="22" Margin="0,20,20,0" TextWrapping="Wrap">                
+                    <Run Text="About"></Run> <Run Text="{Binding Path=Text, ElementName=txtNextTeacherName, Mode=OneWay}"></Run>
+                    <LineBreak/>
+                    <Run FontSize="18" Name="runNextTeacherAbout"></Run>
+                </TextBlock>
+            </StackPanel>
+
+        </Grid>      
+    
+        <Border Name="NoTeacherOverlay" Background="White" Panel.ZIndex="1000" Visibility="Collapsed">
+            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="25" Foreground="#FF868686" Text="No teachers found"></TextBlock>
+        </Border>
+
+        <TextBlock Name="linkBack" Foreground="#FFFFFFFF" FontSize="15" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0" Panel.ZIndex="10000">
             <InlineUIContainer BaselineAlignment="Center">
                 <Path Data="M9,0 3,6 9,12" Width="13" Height="13" Stroke="White" StrokeThickness="2" StrokeLineJoin="Round" StrokeStartLineCap="Round" StrokeEndLineCap="Round"></Path>
             </InlineUIContainer>
             <Run Text="TEACHER PROFILE"></Run>
-            
+
             <TextBlock.Effect>
                 <DropShadowEffect ShadowDepth="0" Opacity=".5" Color="#FF868686"></DropShadowEffect>
             </TextBlock.Effect>

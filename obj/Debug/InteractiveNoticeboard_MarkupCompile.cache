@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 E:\My Workspaces\Current\InteractiveNoticeboard\InteractiveNoticeboard\App.xaml
-22-564526162
-3-734720720
-221074964805
-22712379643
-UserControl\NoticeboardControl.xaml;UserControl\CSTEAnimationControl.xaml;UserControl\TeacherProfileControl.xaml;UserControl\IntroAnimationControl.xaml;MainWindow.xaml;Resource Dictionaries\AnimatedControlsStyles.xaml;Resource Dictionaries\App Themes\ThemeDefault.xaml;Resource Dictionaries\DataGridResources.xaml;Resource Dictionaries\ExpanderStyles.xaml;Resource Dictionaries\ExpressionLight.xaml;Resource Dictionaries\Images.xaml;Resource Dictionaries\ListBoxStyle.xaml;Resource Dictionaries\ScrollBar.xaml;Resource Dictionaries\Templates\ButtonTemplates.xaml;Resource Dictionaries\Theme\Brushes.xaml;Resource Dictionaries\Theme\CoreStyles.xaml;Resource Dictionaries\Theme\CustomStyles.xaml;Resource Dictionaries\Theme\Fonts.xaml;Resource Dictionaries\Theme\NRCTheme.xaml;Resource Dictionaries\Theme\SDKStyles.xaml;Resource Dictionaries\Theme\Styles.xaml;Resource Dictionaries\ToggleButton.xaml;
+31-249803459
+20-1780966198
+36-889299298
+24865390158
+UserControl\SpecialEventBannerSlideShow.xaml;UserControl\ClassScheduleViewerContainer.xaml;UserControl\EventNotificationItemControl.xaml;UserControl\FeaturedVideoViewer.xaml;UserControl\NotificationOverlay.xaml;UserControl\StudentBirthdayGreeter.xaml;UserControl\ClassScheduleViewer.xaml;UserControl\NewsBoard.xaml;UserControl\NoticeboardControl.xaml;UserControl\CSTEAnimationControl.xaml;UserControl\TeacherProfileControl.xaml;UserControl\IntroAnimationControl.xaml;MainWindow.xaml;Resource Dictionaries\AnimatedControlsStyles.xaml;Resource Dictionaries\App Themes\ThemeDefault.xaml;Resource Dictionaries\DataGridResources.xaml;Resource Dictionaries\ExpanderStyles.xaml;Resource Dictionaries\ExpressionLight.xaml;Resource Dictionaries\Images.xaml;Resource Dictionaries\ListBoxStyle.xaml;Resource Dictionaries\ScrollBar.xaml;Resource Dictionaries\Templates\ButtonTemplates.xaml;Resource Dictionaries\Theme\Brushes.xaml;Resource Dictionaries\Theme\CoreStyles.xaml;Resource Dictionaries\Theme\CustomStyles.xaml;Resource Dictionaries\Theme\Fonts.xaml;Resource Dictionaries\Theme\NRCTheme.xaml;Resource Dictionaries\Theme\SDKStyles.xaml;Resource Dictionaries\Theme\Styles.xaml;Resource Dictionaries\ToggleButton.xaml;WeatherReport.xaml;
 
 False
 

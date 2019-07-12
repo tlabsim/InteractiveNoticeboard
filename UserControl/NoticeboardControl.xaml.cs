@@ -1,23 +1,18 @@
-﻿using System;
+﻿using InteractiveNoticeboard.DB_Manager;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
 using System.Windows.Documents;
-using System.Windows.Input;
 using System.Windows.Media;
+using System.Windows.Media.Animation;
+using System.Windows.Media.Effects;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+using TLABS.BinPacking;
 using TLABS.Extensions;
 using TLABS.WPF.Extensions;
-using TLABS.BinPacking;
-using System.Windows.Media.Effects;
-using System.Windows.Media.Animation;
 
 namespace InteractiveNoticeboard
 {
@@ -32,13 +27,33 @@ namespace InteractiveNoticeboard
         int CurrentEnlargedNoticeIndex = -1;        
 
         double GlobalScaleFactor = 1.0;
+        double SpeedFactor = 0.5;
 
         Random RNG = new Random();
         System.Timers.Timer NoticeTimer;
+
+        public event EventHandler Completed;
   
         public NoticeboardControl()
         {
             InitializeComponent();
+
+            LoadSettings();
+        }
+
+        void LoadSettings()
+        {
+            if (!SettingsManager.HasSettings("NoticeBoard", "ScrollSpeedFactor"))
+            {
+                SpeedFactor = 15000;
+                SettingsManager.SetSettings("NoticeBoard", "ScrollSpeedFactor", 0.5);
+            }
+            else
+            {
+                SpeedFactor = SettingsManager.GetSettings("NoticeBoard", "ScrollSpeedFactor").ToDouble(0.5);
+                if (SpeedFactor < .25) SpeedFactor = 0.25;
+                if (SpeedFactor > 2) SpeedFactor = 2;
+            }
         }
 
         public void LoadNotices(int max = 10)
@@ -437,7 +452,7 @@ namespace InteractiveNoticeboard
 
                     if (dy > 0)
                     {
-                        int time_to_scroll = (int)(dy * 50);
+                        int time_to_scroll = (int)(dy * 50 * SpeedFactor);
 
                         start += 500;
                         start += 1000;
@@ -581,7 +596,19 @@ namespace InteractiveNoticeboard
                  }
 
                  sb.Duration = TimeSpan.FromMilliseconds(duration);
-                 sb.Completed += (_o, _e) => { NoticeTimer.Start(); };
+                 sb.Completed += (_o, _e) => 
+                 {
+                     EventHandler eh = this.Completed;
+                     if (eh != null)
+                     {
+                         eh(this, new EventArgs());
+                         return;
+                     }
+                     else
+                     {
+                         NoticeTimer.Start();
+                     }
+                 };
                  sb.Begin(this, HandoffBehavior.Compose);
              });
         }
@@ -661,11 +688,7 @@ namespace InteractiveNoticeboard
 
         private void UserControl_Loaded(object sender, RoutedEventArgs e)
         {
-            ShowStartupAnimation();
-
-            //LoadNotices();
-            //ArrangeNotices();
-            //StartSlideShow();            
+            ShowStartupAnimation();  
         }
 
         private void UserControl_Unloaded(object sender, RoutedEventArgs e)

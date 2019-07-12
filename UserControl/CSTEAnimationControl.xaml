@@ -9,7 +9,7 @@
     <Grid Name="LayoutRoot">
         <Canvas Name="CSTEAnimationCanvas" Background="Black" HorizontalAlignment="Center" VerticalAlignment="Center">
             <Canvas.CacheMode>
-                <BitmapCache EnableClearType="False" RenderAtScale="2" />
+                <BitmapCache EnableClearType="False" RenderAtScale=".5" />
             </Canvas.CacheMode>
         </Canvas>
     </Grid>

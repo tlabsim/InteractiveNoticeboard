@@ -64,7 +64,8 @@ namespace InteractiveNoticeboard
 
         public UISettings()
         {
-            _DefaultFontSize = RegistryHelper.GetSettings("UI", "DefaultFontSize").ToDouble(13.0);
+            //_DefaultFontSize = RegistryHelper.GetSettings("UI", "DefaultFontSize").ToDouble(13.0);
+            _DefaultFontSize = 13;
         }
 
         double _DefaultFontSize = 13;
@@ -154,7 +155,8 @@ namespace InteractiveNoticeboard
 
         public void icon_ResetFontSize()
         {
-            DefaultFontSize = RegistryHelper.GetSettings("UI", "DefaultFontSize").ToDouble(13.0);
+            //DefaultFontSize = RegistryHelper.GetSettings("UI", "DefaultFontSize").ToDouble(13.0);
+            DefaultFontSize = 13;
         }
     }
 }
