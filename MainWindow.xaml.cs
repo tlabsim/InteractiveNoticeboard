@@ -31,7 +31,7 @@ namespace InteractiveNoticeboard
         System.Timers.Timer NotificationTimer;
         int notification_interval_in_minutes = 5;
 
-        List<string> ShowSerial = new List<string>() { "Intro", "NoticeBoard", "TechNews", "WeatherReport", "ClassSchedules", "Teachers", "FeaturedVideo", "NoticeBoard", "SportsNews", "WeatherReport", "ClassSchedules", "Teachers", "SpecialEventBanners" };
+        List<string> ShowOrder = new List<string>() { "Intro", "NoticeBoard", "TechNews", "WeatherReport", "ClassSchedules", "Teachers", "FeaturedVideo", "NoticeBoard", "SportsNews", "WeatherReport", "ClassSchedules", "Teachers", "SpecialEventBanners" };
         List<string> NotificationsAllowedOn = new List<string>() { "NoticeBoard", "TechNews", "SportsNews", "Teachers", "FeaturedVideo", "WeatherReport", "SpecialEventBanners" };
         int CurrentlyShowingIndex = 0;
 
@@ -86,7 +86,7 @@ namespace InteractiveNoticeboard
 
         void OnNotificationTimerElapsed()
         {   
-            string currently_showing = ShowSerial[CurrentlyShowingIndex];
+            string currently_showing = ShowOrder[CurrentlyShowingIndex];
             if (NotificationsAllowedOn.Contains(currently_showing))
             {
                 NotificationOverlay notification_overlay = new NotificationOverlay();
@@ -113,9 +113,9 @@ namespace InteractiveNoticeboard
         void StartShow()
         {
             ContainerPanel.Children.Clear();
-            if (ShowSerial.Count == 0) return;
-            if (CurrentlyShowingIndex >= ShowSerial.Count) CurrentlyShowingIndex = 0;
-            string currently_showing = ShowSerial[CurrentlyShowingIndex];
+            if (ShowOrder.Count == 0) return;
+            if (CurrentlyShowingIndex >= ShowOrder.Count) CurrentlyShowingIndex = 0;
+            string currently_showing = ShowOrder[CurrentlyShowingIndex];
 
             try
             {
